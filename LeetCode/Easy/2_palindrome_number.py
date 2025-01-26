@@ -1,20 +1,20 @@
-class Solution(object):
-    def isPalindrome(self, x):
-        """
-        reverse the number 
-        check if its equel to the original number 
-        """
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
         if x < 0:
             return False
 
-        s =str(x)
-        s=  s[::-1]
-        s = int(s)
+        reversed_num = 0
+        temp = x
 
-        return x == s
-      
-        
+        while temp != 0:
+            digit = temp % 10
+            reversed_num = reversed_num * 10 + digit
+            temp //= 10
+            print(temp)
 
+        return reversed_num == x
+
+ 
 x = 212
 
 s = Solution()
