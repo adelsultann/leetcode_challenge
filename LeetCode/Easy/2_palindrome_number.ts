@@ -36,6 +36,8 @@ function isPalindrome(x: number): boolean {
        x = Math.floor(x / 10);
      }
    
+     //num === ans means the number is a palindrome 
+     
      return num === ans;
    }
     
