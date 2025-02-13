@@ -1,3 +1,4 @@
+
 class Solution:
     # slef is used when the function is part of calss 
     def isPalindrome(self, x: int) -> bool:
@@ -8,7 +9,6 @@ class Solution:
             
             # if x is negative, return False. if x is positive and last digit is 0, that also cannot form a palindrome, return False.
             return False
-
         result = 0
         while x > result:
             # get the last digit for eg x = 1221 the result will be 1 in the first itration the second will be 2
@@ -22,9 +22,6 @@ class Solution:
         return True if (x == result or x == result // 10) else False
  
 x = 212
-
 s = Solution()
-
 result = s.isPalindrome(x)
-
 print("Result:", result)  # Output: [0, 1]
