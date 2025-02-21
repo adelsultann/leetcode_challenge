@@ -3,7 +3,7 @@ class Solution:
     # slef is used when the function is part of calss 
     def isPalindrome(self, x: int) -> bool:
         # handle edge Case : a situation or input that not typical or comman in may require special handling 
-        #150 % 10 = 0 | 122 % 10 = 2 | it always take the last digit
+        # 150 % 10 = 0 | 122 % 10 = 2 | it always take the last digit
         # x > 0 and x % 10 == 0 | this line check if the number is positive and last digit is 0 eg 20 % 10 = 0
         if x < 0 or (x > 0 and x % 10 == 0):  
             
