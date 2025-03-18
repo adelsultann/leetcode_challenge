@@ -1,4 +1,4 @@
-class ListNode {
+class ListNodee {
     val: number;
     next: ListNode | null;
 
