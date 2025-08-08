@@ -3,7 +3,7 @@ class Solution:
         # Dictionary to store numbers and their indices
         num_map = {}
         
-        # Loop through the list, in this case I is the index num is the number 
+        # Loop through the list, in this case i is the index num is the number 
         for i, num in enumerate(nums):
             # Calculate the complement
             complement = target - num
@@ -11,9 +11,11 @@ class Solution:
             # Check if the complement exists in the dictionary
             if complement in num_map:
                 # If it exists, return the indices of the complement and the current number
+                print('this is num_map', num_map[complement])
                 return [num_map[complement], i]
             
-            # If the complement doesn't exist, add the current number and its index to the dictionary
+            # If the complement doesn't exist, add the current number 
+            # and its index to the dictionary
             num_map[num] = i
             print(num_map)
            
